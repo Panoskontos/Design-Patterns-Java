@@ -2,10 +2,10 @@ package panos;
 
 abstract class Plan {
 
-    private double rate;
+    protected double rate;
     abstract void getRate();
 
-    public void calculateBill(int units){
-        System.out.println(units*rate);
+    public void calculateBill(double units){
+        System.out.println( units*rate );
     }
 }
